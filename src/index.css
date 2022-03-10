@@ -1,13 +1,232 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* -------------------- PRODUCTS COMPONENTS CSS ----------------------- */
+
+.Cartitem {
+    display: flex;
+    width: 98%;
+    min-height: 20vh;
+    margin-top: 10px;
+    border-bottom: 1px solid orangered;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Cartitem img {
+    width: 200px;
+    height: 180px;
+    object-fit: contain;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    padding: 0.2rem;
+    margin-bottom: 10px;
 }
+
+.quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 3;
+    margin-left: 20px;
+}
+
+.details h5 {
+    display: flex;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: orangered;
+    align-items: center;
+}
+
+.details h2 {
+    visibility: hidden;
+}
+
+.details p {
+    margin-left: 5px;
+}
+
+.quantity button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    padding: 0.2rem;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid orangered;
+    color: orangered;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.quantity button:hover {
+    background: orangered;
+    color: white;
+}
+
+.amount {
+    color: orangered;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.addButton {
+    position: absolute;
+    top: 65%;
+    left: 0%;
+    background: orangered;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 1px solid orangered;
+}
+
+.delete:hover {
+    background: rgb(228, 95, 95);
+    border: 1px solid orangered;
+}
+
+.visible {
+    display: block;
+}
+
+/* ------------------ TOTAL COMPONENT CSS ----------------- */
+
+.checkout {
+    position: sticky;
+    top: 30px;
+    margin-top: 70px;
+    width: 300px;
+    height: 50vh;
+    border: 1px solid orangered;
+}
+
+.checkout h4 {
+    display: flex;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+}
+
+.checkout-button {
+    width: 300px !important;
+    padding: 1rem 1rem;
+    margin-top: 10px;
+    background: orange;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.checkout-button:hover {
+    background: rgb(230, 132, 12);
+}
+
+.description {
+    margin-top: 17px;
+    background: orangered;
+    padding: 0.5rem 1rem;
+    color: black;
+    text-align: justify;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+}
+
+.cargoamount, .ordertotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    font-weight: bold;
+} 
+
+.money {
+    display: flex;
+    align-items: center;
+}
+
+.money p {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.freeshipping {
+    font-weight: bold;
+    color: green;
+    font-size: 1rem;
+    display: none;
+}
+
+.cargopricedelete {
+    text-decoration: line-through;
+}
+
+.visible-app {
+    display: block;
+    text-decoration: none;
+}
+
+.itemslist {
+    margin-top: 30px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* -------------------- app component css ------------------------- */
+
+.app {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mycart {
+    position: fixed;
+    background: orangered;
+    padding-left: 8px;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.mycart-disabled {
+    display: block;
+}
+
+.mycart h4 {
+    float: right;
+}
+
+.adet {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.main {
+    width: 90vw;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
